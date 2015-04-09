@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="60dp"
+    android:layout_width="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_asset_name"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="150dp"
+        android:layout_height="fill_parent"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/et_asset_num"
+
+            android:inputType="number"
+
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95" />
+
+        <EditText
+            android:id="@+id/et_asset_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:hint="Unit" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_taken_during_last_year"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:inputType="number"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+</TableRow>

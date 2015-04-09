@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="gray">#ffcccccc</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffE1E100</color>
+    <color name="background_gray">#dbdbdb</color>
+    <color name="common_text_color">#00274a</color>
+	<color name="facebook_color">#3664a3</color>
+	<color name="app_common_color">#ababab</color>
+	<color name="default_color">#053963</color>
+	<color name="rewards_header_text_color">#4a8a67</color>
+	<color name="referral_border_color">#545454</color>
+	<color name="ride_history_text_color">#244769</color>
+</resources>

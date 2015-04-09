@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/textview_section_label"
+        android:layout_marginTop="10dp"
+        android:text="Income and Assets Detail" />
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="11. Assets Details" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/tbl_assets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="12.(A) What is the main source of income of your family in last 1 years?"
+         />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Agriculture" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Agri Labour" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Other Labour" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Private Job" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Government Job" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Dairy and Live Stock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Other Non-farm  Activity"
+            android:checked="false"
+             />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Other"
+            android:checked="false"
+             />
+
+
+
+        <EditText
+
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:hint="Others Specify"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textSize="13sp"
+           />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="12.(B) Which member no. of the HH is doing that activity (record member no. from Q.5)"
+         />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="1"
+            android:checked="false"
+             />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="9" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="13.(A) What are the other income sources of the house hold in last 1 years?" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Agriculture" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Agri Labour" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Other Labour" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Private Job" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Government Job" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Dairy and Live Stock" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Other Non-farm  Activity" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Other"
+            android:checked="false"
+            />
+
+
+
+        <EditText
+
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="Others Specify"
+            android:singleLine="true"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="13.(B) And which member of the HH is engaged into that activity" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="1"
+            android:checked="false"
+            />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="3" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="6" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="7" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="8" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="9" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="14. Income Source Detail" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/tbl_income_source_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="15. Livestock Profile" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_livestock_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="16. Quantity wise source of Milk selling" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Selling Point"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Average Daily Quantity Sold (Liters)"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_quantity_wise_selling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="17. Detail of membership of the dairy cooperative society/producer company" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Time for pouring milk with the DCS (In Month)"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Membership ID"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:text="Duration of membership in months"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_detail_of_membership_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>

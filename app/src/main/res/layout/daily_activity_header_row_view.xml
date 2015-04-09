@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="100dp"
+    android:layout_width="wrap_content">
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Sr.\nNo"
+        android:textSize="13sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Your activity in a day (Like Sleeping, Eating, Dairy Work etc.)"
+        android:textSize="13sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="No. of Hrs"
+        android:textSize="13sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="How satisfied are you with your activities with reference to time spend\n1_Highly Dissatisfaction, 2_Dissatisfied, 3_Some what Dissatisfied, 4_Some what satisfied, 5_Satisfied, 6_Fully Satisfied"
+        android:textColor="@color/black" />
+
+
+</TableRow>

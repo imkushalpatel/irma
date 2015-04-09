@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Interviewer Name" />
+
+        <EditText
+            android:id="@+id/et_interviewer_name"
+            style="@style/edittext_equal_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Supervisor Name" />
+
+        <EditText
+            android:id="@+id/et_supervisor_name"
+            style="@style/edittext_equal_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Inward Taken By" />
+
+        <EditText
+            android:id="@+id/et_inward_taken_by"
+            style="@style/edittext_equal_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Inward Date" />
+
+        <Button
+            android:id="@+id/btn_inward_date"
+            style="@style/button_date"
+            android:text="Select Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Survey Date" />
+
+        <Button
+            android:id="@+id/btn_survey_date"
+            style="@style/button_date"
+            android:text="Select Date " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Validation Date" />
+
+        <Button
+            android:id="@+id/btn_validation_date"
+            style="@style/button_date"
+            android:text="Select Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Validated by" />
+
+        <EditText
+            android:id="@+id/et_validated_by"
+            style="@style/edittext_equal_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Validation Comments" />
+
+        <EditText
+            android:id="@+id/et_validation_comments"
+            style="@style/edittext_equal_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Verified by" />
+
+        <EditText
+            android:id="@+id/et_verified_by"
+            style="@style/edittext_equal_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Verification Date" />
+
+        <Button
+            android:id="@+id/btn_verfication_date"
+            style="@style/button_date"
+            android:text="Select Date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Verification Comments" />
+
+        <EditText
+            android:id="@+id/et_verification_comments"
+            style="@style/edittext_equal_label" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/textview_label"
+            android:gravity="center"
+            android:text="Form No:" />
+
+        <TextView
+            android:id="@+id/tv_formNo"
+            style="@style/textview_label"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_section_label"
+        android:layout_marginTop="10dp"
+        android:text="Qualifying Criteria" />
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="A. Does the household have at least one adult male and one adult female member available for the interview (if selected option is ‘No’ then terminate the interview)? "
+         />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Yes" />
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="No" />
+    </RadioGroup>
+
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="B. Number of milch cattle in your house (if selected option is “A” or “G” terminate the interview)" />
+
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_0"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="0" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_1"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_2"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_3"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_4"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_5"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_6_or_more"
+            style="@style/radiobutton_style"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="6 or More" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="C. Do you sell milk (if response is “b” terminate the interview)" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Yes" />
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/textview_section_label"
+        android:layout_marginTop="10dp"
+        android:text="Basic Details" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            style="@style/edittext_equal_label"
+            android:hint="Village name" />
+
+        <EditText
+            style="@style/edittext_equal_label"
+            android:hint="District" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            style="@style/edittext_equal_label"
+            android:hint="Address" />
+
+        <EditText
+            style="@style/edittext_equal_label"
+            android:inputType="number"
+            android:hint="Contact number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            style="@style/edittext_equal_label"
+            android:hint="State" />
+
+        <EditText
+            style="@style/edittext_equal_label"
+            android:hint="EIA" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_section_label"
+        android:layout_marginTop="10dp"
+        android:text="Household Information" />
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="1. Type of family" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Joint" />
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Nuclear" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="2. Religion of HHs" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_hindu"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="religiousChanged"
+            android:text="Hindu" />
+
+        <RadioButton
+            android:id="@+id/radio_christian"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="religiousChanged"
+            android:text="Christian" />
+
+        <RadioButton
+            android:id="@+id/radio_muslim"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="religiousChanged"
+            android:text="Muslim" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_sikh"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="religiousChanged"
+            android:text="Sikh" />
+
+        <RadioButton
+            android:id="@+id/radio_other"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="religiousChanged"
+            android:text="Other" />
+
+        <EditText
+            style="@style/edittext_equal_label"
+            android:hint="Others Specify"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="3. Religion of HHs" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_general"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="castChanged"
+            android:text="General" />
+
+        <RadioButton
+            android:id="@+id/radio_sc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="castChanged"
+            android:text="SC" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_st"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="castChanged"
+            android:text="ST" />
+
+        <RadioButton
+            android:id="@+id/radio_obc"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="castChanged"
+            android:text="OBC" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="4. BPL Card Holder" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <RadioGroup
+        android:id="@+id/radio_bpl_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_bpl_yes"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radio_bpl_no"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="No" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_bpl_number"
+        style="@style/edittext_label"
+        android:hint="BPL Card Number"
+        android:visibility="gone" />
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="5. Total family members (Include information provider/HH head) (The Respondent’s detail must be first row)" />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="(Code For Education:- 1_Post Graduate, 2_Graduate, 3_12th Pass, 4_10th Pass, 5_8th Pass, 6_Primary, 7_Below Primary)" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/tbl_family_members"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="6. Type of house ownership" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Self" />
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Rented" />
+    </RadioGroup>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="7. Type of house hold" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_fully_kuchcha"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="roadTypeChanged"
+            android:text="Fully Kuchcha" />
+
+        <RadioButton
+            android:id="@+id/radio_fully_pucca"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="roadTypeChanged"
+            android:text="Fully Pucca" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_semi_pucca"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="roadTypeChanged"
+            android:text="Semi Pucca (either wall or roof is kuchcha)" />
+
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="8. Facilities available" />
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="Electricity" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Drinking water" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1.2"
+            android:text="Usage water (other than drinking)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="Water tank" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Toilet" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1.2"
+            android:text="Bathroom" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="Gutter" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1"
+            android:text="Cattle shed" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1.2"
+            android:text="Kitchen garden" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="Other" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.2"
+            android:hint="Others Specify"
+            android:singleLine="true"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="9. Sources of drinking water in the household"
+         />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="In-side House" />
+
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Out Side the house"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:hint="If outside house, distance in meters"
+            android:singleLine="true"
+            android:textSize="13sp" />
+        </LinearLayout>
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="10. Main sources of fuel in house" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        style="@style/view_question_footer_line"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1.2"
+            android:text="Wood"
+            android:checked="false"
+             />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:text="Kerosene" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="Cow dung" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1.2"
+            android:text="Bio gas" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:text="Coal" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="LPG" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="1.2"
+            android:text="Agricultural byproducts" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:text="Electricity" />
+
+        <CheckBox
+            style="@style/radiobutton_style"
+            android:layout_weight="0.8"
+            android:text="Others" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="if Others then Specify"
+        android:singleLine="true"
+        android:textSize="13sp" />
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/textview_section_label"
+        android:layout_marginTop="10dp"
+        android:text="Women empowerment/Gender parity in dairy (Ask only to Female member of the family)" />
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="26. A. Do any women in the HH receive the benefits from government or non-government in last 2 years?" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <RadioGroup
+        android:id="@+id/radio_women_empowerment_woment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_women_empowerment_woment_yes"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radio_women_empowerment_woment_no"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="No" />
+    </RadioGroup>
+    
+    <LinearLayout
+        android:id="@+id/ll_women_empowerment_woment_header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/textview_normal_label"
+            android:layout_marginTop="10dp"
+            android:text="26. B. If yes, then which type of benefits have been received" />
+
+        <View
+            style="@style/view_question_footer_line"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:padding="10dp"
+                android:text="Benefits"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:padding="10dp"
+                android:text="(1_Yes/2_No)"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:padding="10dp"
+                android:text="Please share details of benefits"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_women_empowerment_woment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="27. Capacity Enhancement (Ask only to Female member) " />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Components"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="DCS meetings"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Dairy related Trainings"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Dairy Related Advisory Services"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_capacity_enhancement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="28. Do you recall any training provided to you in the area of" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Training Topic"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Who Provided the training"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_training_recall_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="29. Animal Husbandry Details" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:padding="10dp"
+            android:text="Activities "
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:padding="10dp"
+            android:text="Does female member of the Household had participated in the following decisions during the past 6 months\n(1_Yes/2_No)"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:padding="10dp"
+            android:text="If yes, How much input did they have give in making decisions about the following activities? 1 = Very low, 2 = Low, 3 = Medium, 4 = High, 5 = Very high"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fourth_section_animal_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="30. Productive Capital Detail" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="Productive Capital "
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="[Ownership of Details]\n1_Male\n2_Female\b3_Both"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="[Decision of selling Asset]\n1_Male\b2_Female\b3_Both"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:text="[Decision of Purchasing Asset]\n1_Male\b2_Female\b3_Both"
+                    android:textColor="@color/black"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fourth_section_productive_capital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="31. Group Membership Detail" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_fourth_group_membership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="32. Daily Activity Satisfaction" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_daily_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="33. During the last one month, how many days of your primary daily activities did you miss because of poor health? (Number of days from 1 to 30)" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    
+        <EditText
+            style="@style/edittext_label"
+            android:inputType="number"
+            android:hint="Days"/>
+
+            <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="34. Do you suffer from any chronic disability?" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+        
+        
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Yes" />
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="No" />
+    </RadioGroup>
+    
+            <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="35. Time spent by the main female HH in following activities?" />
+            
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:padding="10dp"
+            android:text="Sr.\nNo"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="10dp"
+            android:text="Activity"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:padding="5dp"
+            android:text="Average number of hours in a day"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fourth_section_time_spent_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+
+    <TextView
+        style="@style/textview_section_label"
+        android:layout_marginTop="10dp"
+        android:text="General Empowerment Indicators (To be asked only from the women of the HH)" />
+    
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="36. Statements Agreement" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:padding="10dp"
+            android:text="Statements/Scenarios"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:padding="10dp"
+            android:text="(1_Yes, 2_No)"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_forth_section_quantity_wise_selling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:text="Submit"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+    
+</LinearLayout>
+    </ScrollView>

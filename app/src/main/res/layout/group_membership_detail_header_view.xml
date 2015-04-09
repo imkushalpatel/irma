@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="Group Type"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="In village\n1_Yes\n2_No"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="Member of this group\n1_Yes\n2_No"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="Input in Decision Making\n1_No input,\n2_In Very few Decision\n3_Input in Some Decision\n4_In Most decision\n5_ In to all decisions"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+    
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:text="Ever in Leadership Position [For example, president, secretary, treasurer, vice-president, vice-secretary, etc.]\n1_Yes 2_No"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+
+    
+</LinearLayout>

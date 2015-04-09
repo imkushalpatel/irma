@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/kushal/Android/Sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/home/kushal/AndroidStudioProjects/irma/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-73f3c29d69504fd88b67757f56840a2ee8f2132e.jar" />
+    </item>
+    <item
+        jar="/home/kushal/AndroidStudioProjects/irma/app/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex dex="/home/kushal/AndroidStudioProjects/irma/app/build/intermediates/pre-dexed/debug/classes-b030f1451d76937599d4d138a5252d14871d517e.jar" />
+    </item>
+
+</items>
