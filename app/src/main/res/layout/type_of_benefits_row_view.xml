@@ -24,14 +24,4 @@
         android:textColor="@color/black"
         android:textSize="13sp" />
 
-    <EditText
-        android:id="@+id/et_avg_no_hours"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.4"
-        android:padding="10dp"
-        android:singleLine="true"
-        android:textColor="@color/black"
-        android:textSize="13sp" />
-
 </LinearLayout>

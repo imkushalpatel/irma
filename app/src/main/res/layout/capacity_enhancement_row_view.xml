@@ -19,7 +19,6 @@
         android:layout_height="match_parent"
         android:padding="10dp"
         android:singleLine="true"
-        android:hint="(Y/N)"
         android:textColor="@color/black"
         android:textSize="13sp" />
 
@@ -30,19 +29,8 @@
         android:layout_height="match_parent"
         android:padding="10dp"
         android:singleLine="true"
-        android:hint="(Y/N)"
         android:textColor="@color/black"
         android:textSize="13sp" />
-    
-        
-    <EditText
-        android:id="@+id/et_decision_of_purchasing_asset"
-        android:layout_width="150dp"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        android:singleLine="true"
-        android:hint="(Y/N)"
-        android:textColor="@color/black"
-        android:textSize="13sp" />
-    
+
+
 </LinearLayout>

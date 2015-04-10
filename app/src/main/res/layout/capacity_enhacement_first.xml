@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="horizontal" >
+<TextView
+    android:layout_width="70dp"
+    android:layout_height="match_parent"
+    android:text="Do you recall as who provided the training"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textSize="13sp" />
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+
+        android:layout_width="match_parent"
+        android:text="Animal nutrition"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:text="Fodder development"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+        <TextView
+
+            android:layout_width="match_parent"
+            android:text="Animal health care"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="120dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="13sp" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="120dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

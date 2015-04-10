@@ -108,7 +108,7 @@
     <LinearLayout
         android:id="@+id/ll_animal_details"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="300dp"
         android:orientation="vertical" >
     </LinearLayout>
 
@@ -257,5 +257,283 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="22. Access to Dairy Extension Service" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Activities "
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="1_Yes\n2_No"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="If yes, How many times?"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_dairy_service"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="23. Income Related Detail" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Activities "
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="1=none,2=low,3=moderate,4=high,5=full"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_income_details"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="24. Leadership Related Detail" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Activities "
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="Have You Done?\n1_Yes\n2_No"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:text="1= Not at all comfortable\n2= Yes, but with a great deal of difficult\n3= Yes, but with a little difficulty\n4= Yes, fairly comfortable\n5= Yes, very comfortable"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ledership_details"
+        android:layout_width="fill_parent"
+        android:layout_height="710dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="25.On average, how many hours do you sleep in 24 hours? (Number of hours of sleep during the day+night)" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:hint="Hours"
+            android:singleLine="true"
+            android:textSize="13sp" />
+    </LinearLayout>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="26.How satisfied are you with your leisure activities like visiting neighbors, watching TV, talking to friends, etc.\n(1_setisfied 6_dissatisfied" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_1"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="1" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_2"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_3"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_4"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_5"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/no_of_cattles_6_or_more"
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:onClick="numberOfCattlesChanged"
+            android:text="6" />
+    </LinearLayout>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="27. During the last one month, how many days of your primary daily activities did you miss because of poor health? (Number of days from 1 to 30)" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2"
+            android:hint="Days"
+            android:singleLine="true"
+            android:textSize="13sp"
+            />
+    </LinearLayout>
+    <TextView
+        style="@style/textview_normal_label"
+        android:layout_marginTop="10dp"
+        android:text="28. Do you suffer from any chronic disability?" />
+
+    <View
+        style="@style/view_question_footer_line"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp" />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="Yes" />
+
+        <RadioButton
+            style="@style/radiobutton_style"
+            android:gravity="center"
+            android:text="No" />
+    </RadioGroup>
+
 </LinearLayout>
     </ScrollView>
+

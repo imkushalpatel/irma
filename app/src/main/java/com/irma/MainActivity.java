@@ -119,35 +119,106 @@ public class MainActivity extends SherlockFragmentActivity {
 				quantitywiseSelling.addView(quantitySellingView);
 			}*/
 		}
+        LinearLayout incomDetails = (LinearLayout) findViewById(R.id.ll_income_details);
+        if(incomDetails != null) {
+            incomDetails.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("How much say do you have on the use of income generated from the sale of Milk?");
+            nameList.add("How much input do you have on the use of income generated from the sale of milch cattle?");
+            //nameList.add("Producer Company");
+            //nameList.add("'Dudhia' (Local Milk-man/middle-man)");
+            //nameList.add("Nearby Spot Market");
+            for (int l = 0; l < nameList.size(); l++) {
+                View quantitySellingView = inflater.inflate(R.layout.quantity_selling_row_view, null);
+                if (quantitySellingView != null) {
+                    TextView sellingName = (TextView) quantitySellingView.findViewById(R.id.tv_selling_point_name);
+                    if (sellingName != null) {
+                        sellingName.setText(nameList.get(l));
+                    }
+                }
+                incomDetails.addView(quantitySellingView);
+            }
+            //incomDetails.addView(inflater.inflate(R.layout.quantity_selling_other_row_view, null));
+        }
+        LinearLayout incomDetails1 = (LinearLayout) findViewById(R.id.ll_income_details1);
+        if(incomDetails1 != null) {
+            incomDetails1.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("How much say do you have on the use of income generated from the sale of Milk?");
+            nameList.add("How much input do you have on the use of income generated from the sale of milch cattle?");
+            //nameList.add("Producer Company");
+            //nameList.add("'Dudhia' (Local Milk-man/middle-man)");
+            //nameList.add("Nearby Spot Market");
+            for (int l = 0; l < nameList.size(); l++) {
+                View quantitySellingView = inflater.inflate(R.layout.quantity_selling_row_view, null);
+                if (quantitySellingView != null) {
+                    TextView sellingName = (TextView) quantitySellingView.findViewById(R.id.tv_selling_point_name);
+                    if (sellingName != null) {
+                        sellingName.setText(nameList.get(l));
+                    }
+                }
+                incomDetails1.addView(quantitySellingView);
+            }
+            //incomDetails.addView(inflater.inflate(R.layout.quantity_selling_other_row_view, null));
+        }
 		
 		LinearLayout timeSpentQty = (LinearLayout) findViewById(R.id.ll_time_spent_content);
-		if(timeSpentQty != null){
-			timeSpentQty.removeAllViews();
-			ArrayList<String> nameList = new ArrayList<String>();
-			nameList.add("Cleaning of cattle shed");
-			nameList.add("Cleaning/care of animals");
-			nameList.add("Collect/prepare fodder");
-			nameList.add("Prepare cattle feed");
-			nameList.add("Feeding animals ");
-			nameList.add("Milking animals");
-			nameList.add("Pouring milk");
-			nameList.add("Grazing cattle");
-			nameList.add("Fetching water for cattle");
-			nameList.add("Cleaning of milk vessels");
-			for(int l=0;l<nameList.size();l++){
-				View timeSpentView = inflater.inflate(R.layout.time_spent_row_view, null);
-				if(timeSpentView != null){
-					TextView srNo = (TextView) timeSpentView.findViewById(R.id.tv_sr_no);
-					if(srNo != null){
-						srNo.setText((l+1)+"");
-					}
-					TextView activity = (TextView) timeSpentView.findViewById(R.id.tv_activity);
-					if(activity != null){
-						activity.setText(nameList.get(l));
-					}
-				}
-				timeSpentQty.addView(timeSpentView);
-			}
+		if(timeSpentQty != null) {
+            timeSpentQty.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Cleaning of cattle shed");
+            nameList.add("Cleaning/care of animals");
+            nameList.add("Collect/prepare fodder");
+            nameList.add("Prepare cattle feed");
+            nameList.add("Feeding animals ");
+            nameList.add("Milking animals");
+            nameList.add("Pouring milk");
+            nameList.add("Grazing cattle");
+            nameList.add("Fetching water for cattle");
+            nameList.add("Cleaning of milk vessels");
+            for (int l = 0; l < nameList.size(); l++) {
+                View timeSpentView = inflater.inflate(R.layout.time_spent_row_view, null);
+                if (timeSpentView != null) {
+                    TextView srNo = (TextView) timeSpentView.findViewById(R.id.tv_sr_no);
+                    if (srNo != null) {
+                        srNo.setText((l + 1) + "");
+                    }
+                    TextView activity = (TextView) timeSpentView.findViewById(R.id.tv_activity);
+                    if (activity != null) {
+                        activity.setText(nameList.get(l));
+                    }
+                }
+                timeSpentQty.addView(timeSpentView);
+            }
+        }
+            LinearLayout timeSpentQty1 = (LinearLayout) findViewById(R.id.ll_time_spent_content1);
+            if(timeSpentQty1 != null){
+                timeSpentQty1.removeAllViews();
+                ArrayList<String> nameList = new ArrayList<String>();
+                nameList.add("Cleaning of cattle shed");
+                nameList.add("Cleaning/care of animals");
+                nameList.add("Collect/prepare fodder");
+                nameList.add("Prepare cattle feed");
+                nameList.add("Feeding animals ");
+                nameList.add("Milking animals");
+                nameList.add("Pouring milk");
+                nameList.add("Grazing cattle");
+                nameList.add("Fetching water for cattle");
+                nameList.add("Cleaning of milk vessels");
+                for(int l=0;l<nameList.size();l++){
+                    View timeSpentView = inflater.inflate(R.layout.time_spent_row_view, null);
+                    if(timeSpentView != null){
+                        TextView srNo = (TextView) timeSpentView.findViewById(R.id.tv_sr_no);
+                        if(srNo != null){
+                            srNo.setText((l+1)+"");
+                        }
+                        TextView activity = (TextView) timeSpentView.findViewById(R.id.tv_activity);
+                        if(activity != null){
+                            activity.setText(nameList.get(l));
+                        }
+                    }
+                    timeSpentQty1.addView(timeSpentView);
+                }
 			/*View otherView = inflater.inflate(R.layout.time_spent_other_row_view, null);
 			if(otherView != null){
 				TextView srNo = (TextView) otherView.findViewById(R.id.tv_sr_no);
@@ -216,7 +287,108 @@ public class MainActivity extends SherlockFragmentActivity {
 				}
 				animalDetails.addView(animalDetailView);
 			}
-		}
+		}LinearLayout animalDetails1 = (LinearLayout) findViewById(R.id.ll_animal_details1);
+        if(animalDetails1 != null){
+
+            animalDetails1.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Selling milk");
+            nameList.add("Vaccination and veterinary services ");
+            nameList.add("Cultivation of animal feed ");
+            nameList.add("Buying of animal feed ");
+            nameList.add("Artificial insemination of the milch animals");
+            for(int l=0;l<nameList.size();l++){
+                View animalDetailView = inflater.inflate(R.layout.animal_details_row_view, null);
+                if(animalDetailView != null){
+                    TextView benefit = (TextView) animalDetailView.findViewById(R.id.tv_benfit);
+                    if(benefit != null){
+                        benefit.setText(nameList.get(l));
+                    }
+                }
+                animalDetails1.addView(animalDetailView);
+            }
+        }
+        LinearLayout diaryService = (LinearLayout) findViewById(R.id.ll_dairy_service);
+        if(diaryService != null){
+
+            diaryService.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Have you used any veterinary service in past 12 months?");
+            nameList.add("Have you any artificial insemination service in past 12 months?");
+            nameList.add("Have you used animal feed and nutrition advisory service in past 12 months?");
+            for(int l=0;l<nameList.size();l++){
+                View animalDetailView = inflater.inflate(R.layout.animal_details_row_view, null);
+                if(animalDetailView != null){
+                    TextView benefit = (TextView) animalDetailView.findViewById(R.id.tv_benfit);
+                    if(benefit != null){
+                        benefit.setText(nameList.get(l));
+                    }
+                }
+                diaryService.addView(animalDetailView);
+            }
+        }
+        LinearLayout diaryService1 = (LinearLayout) findViewById(R.id.ll_dairy_service1);
+        if(diaryService1 != null){
+
+            diaryService1.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Have you used any veterinary service in past 12 months?");
+            nameList.add("Have you any artificial insemination service in past 12 months?");
+            nameList.add("Have you used animal feed and nutrition advisory service in past 12 months?");
+            for(int l=0;l<nameList.size();l++){
+                View animalDetailView = inflater.inflate(R.layout.animal_details_row_view, null);
+                if(animalDetailView != null){
+                    TextView benefit = (TextView) animalDetailView.findViewById(R.id.tv_benfit);
+                    if(benefit != null){
+                        benefit.setText(nameList.get(l));
+                    }
+                }
+                diaryService1.addView(animalDetailView);
+            }
+        }
+        LinearLayout leadershipDetails = (LinearLayout) findViewById(R.id.ll_ledership_details);
+        if(leadershipDetails != null){
+
+            leadershipDetails.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Do you feel comfortable speaking up in public to help decide on infrastructure (like small wells, roads, water supplies, etc.) to be built in your community?");
+            nameList.add("Do you feel comfortable speaking up in public to ensure proper payment of wages for public works or other similar programs?");
+            nameList.add("Do you feel comfortable speaking up in public to protest the misbehavior of the authorities or elected officials?");
+            nameList.add("Do you feel comfortable speaking up in public against the malpractices of local 'Dudhia'/cooperative dairy or other milk buyers in your village?");
+
+            for(int l=0;l<nameList.size();l++){
+                View animalDetailView = inflater.inflate(R.layout.animal_details_row_view, null);
+                if(animalDetailView != null){
+                    TextView benefit = (TextView) animalDetailView.findViewById(R.id.tv_benfit);
+                    if(benefit != null){
+                        benefit.setText(nameList.get(l));
+                    }
+                }
+                leadershipDetails.addView(animalDetailView);
+            }
+        }
+        LinearLayout leadershipDetails1 = (LinearLayout) findViewById(R.id.ll_ledership_details1);
+        if(leadershipDetails1 != null){
+
+            leadershipDetails1.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Do you feel comfortable speaking up in public to help decide on infrastructure (like small wells, roads, water supplies, etc.) to be built in your community?");
+            nameList.add("Do you feel comfortable speaking up in public to ensure proper payment of wages for public works or other similar programs?");
+            nameList.add("Do you feel comfortable speaking up in public to protest the misbehavior of the authorities or elected officials?");
+            nameList.add("Do you feel comfortable speaking up in public against the malpractices of local 'Dudhia'/cooperative dairy or other milk buyers in your village?");
+
+            for(int l=0;l<nameList.size();l++){
+                View animalDetailView = inflater.inflate(R.layout.animal_details_row_view, null);
+                if(animalDetailView != null){
+                    TextView benefit = (TextView) animalDetailView.findViewById(R.id.tv_benfit);
+                    if(benefit != null){
+                        benefit.setText(nameList.get(l));
+                    }
+                }
+                leadershipDetails1.addView(animalDetailView);
+            }
+        }
+
 		LinearLayout productiveDetails = (LinearLayout) findViewById(R.id.ll_productive_capital);
 		if(productiveDetails != null){
 			
@@ -237,6 +409,26 @@ public class MainActivity extends SherlockFragmentActivity {
 				productiveDetails.addView(productiveDetailView);
 			}
 		}
+        LinearLayout productiveDetails1 = (LinearLayout) findViewById(R.id.ll_productive_capital1);
+        if(productiveDetails1 != null){
+
+            productiveDetails1.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Milch animals");
+            nameList.add("Milk Produced");
+            //nameList.add("Dairy related equipments (mechanized)");
+            //nameList.add("Dairy related equipments up to Rs. 5000/-");
+            for(int l=0;l<nameList.size();l++){
+                View productiveDetailView = inflater.inflate(R.layout.productive_capital_row_view, null);
+                if(productiveDetailView != null){
+                    TextView productive = (TextView) productiveDetailView.findViewById(R.id.tv_productive_capital);
+                    if(productive != null){
+                        productive.setText(nameList.get(l));
+                    }
+                }
+                productiveDetails1.addView(productiveDetailView);
+            }
+        }
         LinearLayout landingSources = (LinearLayout) findViewById(R.id.ll_landing_sources);
         if(landingSources != null){
 
@@ -258,6 +450,29 @@ public class MainActivity extends SherlockFragmentActivity {
                     }
                 }
                 landingSources.addView(productiveDetailView);
+            }
+        }
+        LinearLayout landingSources1 = (LinearLayout) findViewById(R.id.ll_landing_sources1);
+        if(landingSources1 != null){
+
+            landingSources1.removeAllViews();
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Non-Governmental Organizations (NGOs)");
+            nameList.add("Money Lander");
+            nameList.add("Formal Lender\n(Banks Financial Institutional NBFC)");
+            nameList.add("Friends or Relative");
+            nameList.add("Micro-Finance or Such Group Based Lending Schemes");
+            //nameList.add("Dairy related equipments (mechanized)");
+            //nameList.add("Dairy related equipments up to Rs. 5000/-");
+            for(int l=0;l<nameList.size();l++){
+                View productiveDetailView = inflater.inflate(R.layout.productive_capital_row_view, null);
+                if(productiveDetailView != null){
+                    TextView productive = (TextView) productiveDetailView.findViewById(R.id.tv_productive_capital);
+                    if(productive != null){
+                        productive.setText(nameList.get(l));
+                    }
+                }
+                landingSources1.addView(productiveDetailView);
             }
         }
 		LinearLayout groupMembership = (LinearLayout) findViewById(R.id.ll_group_membership);
@@ -284,6 +499,30 @@ public class MainActivity extends SherlockFragmentActivity {
 			}
             groupMembership.addView(inflater.inflate(R.layout.group_membership_details_other_view, null));
 		}
+        LinearLayout groupMembership1 = (LinearLayout) findViewById(R.id.ll_group_membership1);
+        if(groupMembership1 != null){
+
+            groupMembership1.removeAllViews();
+            groupMembership1.addView(inflater.inflate(R.layout.group_membership_detail_header_view, null));
+            ArrayList<String> nameList = new ArrayList<String>();
+            nameList.add("Agriculture/livestock/milk producer or marketing groups");
+            nameList.add("Water users' group");
+            nameList.add("Forest users' group");
+            nameList.add("Credit or micro-finance group");
+            nameList.add("Panchayat");
+
+            for(int l=0;l<nameList.size();l++){
+                View groupMembershipRow = inflater.inflate(R.layout.group_membership_detail_row_view, null);
+                if(groupMembershipRow != null){
+                    TextView groupType = (TextView) groupMembershipRow.findViewById(R.id.tv_group_type);
+                    if(groupType != null){
+                        groupType.setText(nameList.get(l));
+                    }
+                }
+                groupMembership1.addView(groupMembershipRow);
+            }
+            groupMembership1.addView(inflater.inflate(R.layout.group_membership_details_other_view, null));
+        }
 		LinearLayout womenEmpowermentWomen = (LinearLayout) findViewById(R.id.ll_women_empowerment_woment);
 		if(womenEmpowermentWomen != null){
 			
@@ -306,7 +545,7 @@ public class MainActivity extends SherlockFragmentActivity {
 				womenEmpowermentWomen.addView(timeSpentView);
 			}
 		}
-		RadioGroup radioGroupWomen = (RadioGroup) findViewById(R.id.radio_women_empowerment_woment);
+		/*RadioGroup radioGroupWomen = (RadioGroup) findViewById(R.id.radio_women_empowerment_woment);
 		if(radioGroupWomen != null){
 			radioGroupWomen.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 				
@@ -322,14 +561,14 @@ public class MainActivity extends SherlockFragmentActivity {
 					}
 				}
 			});
-		}
+		}*/
 		LinearLayout capacityEnhancement = (LinearLayout) findViewById(R.id.ll_capacity_enhancement);
 		if(capacityEnhancement != null){
 			
 			capacityEnhancement.removeAllViews();
 			ArrayList<String> nameList = new ArrayList<String>();
-			nameList.add("Did you participate in Diary related �.? ");
-			nameList.add("Do you recall as who provided the training");
+			nameList.add("Did you participate in ? ");
+			//nameList.add("Do you recall as who provided the training");
 			nameList.add("Did you understand what was discussed?");
 			nameList.add("If Yes, Can you please share what was discussed/shared");
 			nameList.add("Did you discuss/ask any questions?");
@@ -345,10 +584,11 @@ public class MainActivity extends SherlockFragmentActivity {
 				capacityEnhancement.addView(timeSpentView);
 				if(l == 0){
 					capacityEnhancement.addView(inflater.inflate(R.layout.capacity_enhancement_ask_textview, null));
+                    capacityEnhancement.addView(inflater.inflate(R.layout.capacity_enhacement_first,null));
 				}
 			}
 		}
-		LinearLayout recallContent = (LinearLayout) findViewById(R.id.ll_training_recall_content);
+		/*LinearLayout recallContent = (LinearLayout) findViewById(R.id.ll_training_recall_content);
 		if(recallContent != null){
 			
 			recallContent.removeAllViews();
@@ -367,7 +607,7 @@ public class MainActivity extends SherlockFragmentActivity {
 				recallContent.addView(timeSpentView);
 				
 			}
-		}
+		}*//*
 		LinearLayout animalFourthDetails = (LinearLayout) findViewById(R.id.ll_fourth_section_animal_details);
 		if(animalFourthDetails != null){
 			
@@ -468,7 +708,7 @@ public class MainActivity extends SherlockFragmentActivity {
 				}
 				timeSpentFourthSectionQty.addView(otherView);	
 			}
-		}
+		}*/
 		LinearLayout quantityfourthwiseSelling = (LinearLayout) findViewById(R.id.ll_forth_section_quantity_wise_selling);
 		if(quantityfourthwiseSelling != null){
 			quantityfourthwiseSelling.removeAllViews();
@@ -492,7 +732,7 @@ public class MainActivity extends SherlockFragmentActivity {
 			
 		}
 
-		LinearLayout dailyActivity = (LinearLayout) findViewById(R.id.ll_daily_activity);
+		/*LinearLayout dailyActivity = (LinearLayout) findViewById(R.id.ll_daily_activity);
 		if(dailyActivity != null){
 			
 			dailyActivity.removeAllViews();
@@ -507,7 +747,7 @@ public class MainActivity extends SherlockFragmentActivity {
 					dailyActivity.addView(indexView);
 				}
 			}
-		}
+		}*/
 	}
 	public void insertAnimals(LayoutInflater inflater, LinearLayout content, String animalName, int count,boolean showOthers){
 		View cowView = inflater.inflate(R.layout.livestock_table_row_view, null);
